@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bezerra</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bezerra_teste/css/mobile.css">
+    <link rel="stylesheet" href="../bezerra_teste/css/slide.css">
+    <link rel="stylesheet" href="../bezerra_teste/css/nv.css">
+
+    <style>
+ 
+            .nav-pills{
+             background-color: white;
+           }
+           
+             .logo{
+           width: 150px;
+             }
+             .cornav{
+               background-color:#000; 
+             }
+           .btn-laranja{
+             background-color:#9e9e9e; 
+             color: white;
+           
+           }
+           .separar{
+             padding-top:80px;
+           }
+           .afastar{
+             padding-left: 5rem!important;
+           }
+           a{
+             color: #000;
+           }
+           .colortext{
+             color: white;
+           }
+           .afastarMobile{
+             padding-left: 2.8rem!important;
+             padding-right: 10%;
+           }
+           
+           .linha{
+             padding:4px;
+           }
+           .a:hover{
+             background-color:#000;
+             color:white ;
+           }
+           .center{
+            align-items: center;
+            display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: center;
+           }
+           .imgfuncionario{
+             width: 100px;
+           }
+           .imgloja{
+           width: 300px;
+           }
+           .tamanhoimgfuncionario{
+             width: 200px;
+           }
+           .tamanhoimgloja{
+             width: 300px;
+           }
+           .img1{
+             float: left;
+             margin: 0 10px 10px 0;
+           }
+           .mobilelogo{
+               margin-right: auto;
+           }
+           * { margin:0; padding:0; box-sizing:border-box; }
+           
+           .error-border {
+               border: 2px solid rgba(253, 28, 28, .835);
+           }
+           
+           .sucess-border {
+               border: 2px solid rgb(2, 238, 34);
+           }
+           input{
+            text-transform: uppercase;
+
+           }
+             </style>
+           
+</head>
+
+<body>
+   
+    <div class="sticky-top Desktop" id="navbar"></div>
+
+    <div class="mobile-phone"> <!--navbar mobile inicio-->
+      <div class="navbar navbar-light cornav mobilelogo">
+      <a href="index.html"><img class="logo mobilelogo" src="images/lb.png" ></a>
+      <button data-target="slide-out" class="sidenav-trigger btn nav-pills navbar-toggler"><i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <div style="background-color:#000;">
+      <div class="container" >
+          <form onsubmit="controle.enviaMobile(event)" class="form-inline font-dark ">
+           <div class="col-5">
+              <input type="text" class="form-control placa bordainput" id="placaMobile" placeholder="Placa">
+            </div>
+            <div class="col-5">
+                <input type="text" class="form-control produto bordainput" id="produtoMobile" placeholder="Produto">
+              </div>
+          
+           <div class="col-2"> <button type="submit"  style="border:0;background-color:#000;"><img src="../bezerra_teste/images/elementos/elem.png" style ="width:45px; margin-left:-10px ;"> </button></div>  
+          </form>
+        </div>
+      </div>
+    </div>    <!--navbar mobile fim-->
+
+    <div id="slid"></div>
+
+    <section class="separar">  <!--Corpo inicio-->
+      <div class="container">
+        <div class="row ">
+          <div class="col">
+          <div class="center "> <img class="img tamanhoimgloja"  src="../bezerra_teste/images/slidesb/imd4.jpg"  > </div> <br>
+        <div class="center"><a href="http://webcache.googleusercontent.com/search?q=cache:http://www.autopecasbezerra.com.br/quemsomos.php"><button class="btn btn-laranja "  type="submit">   QUEM SOMOS <br> NOSSA HISTORIA </button> </a> </div>
+          <br>
+      </div>
+      
+      <div class="col">
+        <img class="img1 tamanhoimgfuncionario imgs " src="./images/elementos/Icone Funcionario.png">  
+        <h4 style="color:black"  class="text-rigth center"> QUER FAZER PARTE DA NOSSA EQUIPE? </h4> 
+        <div class="center"> <p  class="text-rigth " style="font:20px  century gothic; color:grey">Estamos sempre buscando excelentes profissionais para nosso time!</p> </div>
+       <br class="b">  
+       <br class="b">
+       <br class="b">
+       <br>
+        <div class="center">  <a href="http://webcache.googleusercontent.com/search?q=cache:http://www.autopecasbezerra.com.br/trabalheconosco.php"> <button class="btn btn-laranja" type="submit">ENVIAR CURRICULO </button> </a>
+        </div> 
+        </div>
+      </div> 
+
+    </section><!--Corpo fim-->
+
+    
+        </div>
+    </div>
+    
+    
+
+
+    <footer id="foot" > 
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/View/View.js"></script>
+<script src="js/View/NavbarView.js"></script>
+<script src="js/View/Slide.js"></script>
+<script src="js/View/FooterView.js"></script>
+<script src="js/Model/Bibi.js"></script>:
+<script src="js/Controller.js"></script>
+
+
+    <script>
+      
+      var controle = new Controller()
+
+    </script> 
+
+    <script src="js/scripts.js"></script>   
+
+
+</html>

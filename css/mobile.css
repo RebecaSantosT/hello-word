@@ -1,0 +1,39 @@
+.mobile-phone {
+    display: none;
+}
+
+.mobile-img {
+    width: 100%;
+    display: none;
+}
+
+.imagem-popup {
+    width: 100%;
+    display: none;
+}
+.imgfuncionario{
+    display: none;
+}
+.imgloja{
+    display: none;
+}
+@media (max-width:767px) {
+    .Desktop {
+        display: none;
+    }
+    .imgfuncionario{
+        display: block;
+      }
+      .imgloja{
+        display: block;
+      }
+      .mobile-phone {
+          display: block;
+      }
+    
+}
+
+input[type="text"]::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: rgb(116, 116, 134);
+}

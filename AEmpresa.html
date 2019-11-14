@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bezerra</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bezerra_teste/css/mobile.css">
+    <link rel="stylesheet" href="../bezerra_teste/css/slide.css">
+    <link rel="stylesheet" href="../bezerra_teste/css/nv.css">
+
+    <style>
+ 
+            .nav-pills{
+             background-color: white;
+           }
+           
+             .logo{
+           width: 150px;
+             }
+             .cornav{
+               background-color:#000; 
+             }
+           .btn-laranja{
+             background-color:#9e9e9e; 
+             color: white;
+           
+           }
+           .separar{
+             padding-top:80px;
+           }
+           .afastar{
+             padding-left: 5rem!important;
+           }
+           a{
+             color: #000;
+           }
+           .colortext{
+             color: white;
+           }
+           .afastarMobile{
+             padding-left: 2.8rem!important;
+             padding-right: 10%;
+           }
+           
+           .linha{
+             padding:4px;
+           }
+           .a:hover{
+             background-color:#000;
+             color:white ;
+           }
+           .center{
+            align-items: center;
+            display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: center;
+           }
+           .imgfuncionario{
+             width: 100px;
+           }
+           .imgloja{
+           width: 300px;
+           }
+           .tamanhoimgfuncionario{
+             width: 200px;
+           }
+           .tamanhoimgloja{
+             width: 300px;
+           }
+           .img1{
+             float: left;
+             margin: 0 10px 10px 0;
+           }
+           .mobilelogo{
+               margin-right: auto;
+           }
+           * { margin:0; padding:0; box-sizing:border-box; }
+           
+           .error-border {
+               border: 2px solid rgba(253, 28, 28, .835);
+           }
+           
+           .sucess-border {
+               border: 2px solid rgb(2, 238, 34);
+           }
+
+           input{
+            text-transform: uppercase;
+
+           }
+           
+             </style>
+           
+</head>
+
+<body>
+   
+  <div class="sticky-top Desktop" id="navbar"></div>
+
+  <div class="mobile-phone"> <!--navbar mobile inicio-->
+    <div class="navbar navbar-light cornav mobilelogo">
+    <a href="index.html"><img class="logo mobilelogo" src="images/lb.png" ></a>
+    <button data-target="slide-out" class="sidenav-trigger btn nav-pills navbar-toggler"><i class="fa fa-bars"></i>
+    </button>
+  </div>
+
+  <div style="background-color:#000;">
+    <div class="container" >
+        <form onsubmit="controle.enviaMobile(event)" class="form-inline font-dark ">
+         <div class="col-5">
+            <input type="text" class="form-control placa bordainput" id="placaMobile" placeholder="Placa">
+          </div>
+          <div class="col-5">
+              <input type="text" class="form-control produto bordainput" id="produtoMobile" placeholder="Produto">
+            </div>
+        
+         <div class="col-2"> <button type="submit"  style="border:0;background-color:#000;"><img src="../bezerra_teste/images/elementos/elem.png" style ="width:45px; margin-left:-10px ;"> </button></div>  
+        </form>
+      </div>
+    </div>
+  </div>    <!--navbar mobile fim-->
+
+<div class="container">
+
+  <h2 class="center">A Empresa</h2>
+  <p></p>
+
+  <div class="container ">
+          
+    <div class="row center mt-5">
+            <div class="col-6" >
+                <img src="../bezerra_teste/images/quemsomos.jpg" style=" width: 350px; height: 263px;" >
+              </div>
+
+              <div class="lead col-6">
+                <h4>QUEM SOMOS?</h4>
+                <p>ATUALMENTE, O GRUPO EMPRESARIAL BEZERRA, FORMADO PELA REDE DE LOJAS BEZERRA AUTOPEÇAS
+                E PELO CENTRO AUTOMOTIVO BEZERRA AUTO CENTER, SE CONSOLIDA COMO A MAIOR E MAIS
+                COMPLETA EMPRESA DO SETOR DE AUTOPEÇAS E MANUTENÇÃO AUTOMOTIVA DO VALE DO SÃO
+                 FRANCISCO, DISPONDO DE UM AMPLO ESTOQUE COM MAIS DE 35 MIL ITENS DE PEÇAS
+                MECÂNICAS E ELÉTRICAS, ACESSÓRIOS E EQUIPAMENTOS PARA VEÍCULOS NACIONAIS E
+                IMPORTADOS DAS LINHAS LEVE E UTILITÁRIOS.</p>
+            </div>
+        
+      </div>
+  </div>
+
+      <div class="container">
+          <div class="row">    
+             
+                
+          </div>
+      </div>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12 lead">
+              <h4>NOSSA HISTORIA</h4>
+              <p>FUNDADA EM 12 DE MAIO DE 1986, EM JUAZEIRO DA BAHIA, POR JOSÉ BEZERRA CLAUDINO E 
+                  SUA ESPOSA, FRANCINETE BORGES DA SILVA CLAUDINO, A BEZERRA AUTOPEÇAS INICIOU SUAS 
+                  ATIVIDADES ATUANDO NO SEGMENTO DE BORRACHARIA, COM PRESTAÇÃO DE 
+                  SERVIÇOS E VENDAS DE PNEUS E CÂMARAS DE AR. </p>
+              <p>COM O PASSAR DOS ANOS E A CONSTANTE DEMANDA DOS CLIENTES POR PEÇAS AUTOMOTIVAS,
+                  A EMPRESA PASSOU A VENDER PEÇAS MECÂNICAS E ELÉTRICAS PARA VEÍCULOS NACIONAIS
+                  DA LINHA LEVE. </p>
+              <p>EM MARÇO DE 1991, FOI INAUGURADA SUA PRIMEIRA FILIAL, EM SEDE PRÓPRIA, SITUADA NO BAIRRO ALTO DO CRUZEIRO EM JUAZEIRO DA BAHIA.
+                  NAQUELE MOMENTO, A EMPRESA PASSOU A DISPOR DE SERVIÇOS MECÂNICOS E ELÉTRICOS, E ACRESCENTOU AO SEU MIX DE PRODUTOS A VENDA DE 
+                  ACESSÓRIOS E EQUIPAMENTOS PARA VEÍCULOS NACIONAIS DA LINHA LEVE. </p> 
+              <p>ANO A ANO, A EMPRESA FOI CONSOLIDANDO A SUA MARCA NO MERCADO, FOCANDO NA AMPLIAÇÃO
+                  INCESSANTE DO SEU ESTOQUE E DA SUA INFRAESTRUTURA FÍSICA E HUMANA, ATRAVÉS DE 
+                  SUCESSIVAS REFORMAS, AMPLIAÇÕES E CONTRATAÇÕES. EM 1997, A EMPRESA ADQUIRIU UMA 
+                  SEDE PRÓPRIA PARA A MATRIZ, NA AVEDINA DR. ADOLFO VIANA, EM JUAZEIRO DA BAHIA. </p>   
+              <p>NA PRIMEIRA DÉCADA DO SÉCULO XXI, A EMPRESA PASSOU POR PROFUNDAS TRANSFORMAÇÕES A 
+                  FIM DE SE MODERNIZAR, ADEQUANDO-SE ÀS DEMANDAS DO MERCADO. A ATUAÇÃO NO SEGMENTO
+                   DE BORRACHARIA FOI ENCERRADA, A MATRIZ FOI TRANSFERIDA PARA O ALTO DO CRUZEIRO, 
+                   LOCAL ONDE O COMÉRCIO CRESCIA COM MAIS VIGOR, INICIOU-SE O PROCESSO DE 
+                   INFORMATIZAÇÃO DA EMPRESA E AMPLIOU-SE O MIX DE PRODUTOS COM A INCLUSÃO DE PEÇAS
+                    PARA VEÍCULOS IMPORTADOS E UTILITÁRIOS. </p>
+              <p>COM O CRESCIMENTO CONSTANTE, EM MARÇO DE 2011, INAUGURAMOS UM MODERNO CENTRO AUTOMOTIVO 
+                  NA UNIDADE DE JUAZEIRO E, EM OUTUBRO DE 2011, FOI INAUGURADA NOSSA PRIMEIRA LOJA 
+                  NA CIDADE VIZINHA DE PETROLINA, EM PERNAMBUCO.</p>
+              <p>EM 2016, O GRUPO EMPRESARIAL BEZERRA COMPLETOU 30 ANOS DE EXISTÊNCIA E COMEMOROU ESTA 
+                  DATA MARCANTE COM A INAUGURAÇÃO DE UMA MEGA LOJA, COM 1800m2, NA CIDADE DE PETROLINA-PE! </p>        
+              <p>ESTA NOVA LOJA REPRESENTA UM NOVO PADRÃO PARA O NOSSO GRUPO EMPRESARIAL E UM NOVO CONCEITO PARA O SEGMENTO DE AUTOPEÇAS DO VALE DO 
+                  SÃO FRANCISCO! TRATA-SE DE UMA EMPRESA QUE TEM COMO MISSÃO E VISÃO SER A PRINCIPAL PARCEIRA DE TODOS OS ELOS DA CADEIA AUTOMOTIVA 
+                  DA NOSSA ÁREA DE ATUAÇÃO: LOJAS DE AUTOPEÇAS, CENTROS AUTOMOTIVOS, MECÂNICOS INDEPENDENTES, FROTISTAS E CONSUMIDORES FINAIS. </p>
+              <p>PARA CADA UM DESSES PARCEIROS, O GRUPO EMPRESARIAL BEZERRA DISPONIBILIZA CONDIÇÕES ESPECIAIS VISANDO A VALORIZAÇÃO DO NOSSO SEGMENTO COMO UM TODO. </p>
+              <p></p>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+    
+
+    <footer id="foot"> </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/View/View.js"></script>
+<script src="js/View/NavbarView.js"></script>
+<script src="js/View/FooterView.js"></script>
+<script src="js/Model/Bibi.js"></script>
+<script src="js/ControleEmpresa.js"></script>
+
+
+    <script>
+      
+        var controle = new ControleEmpresa()
+
+    </script> 
+
+   
+
+
+    <script src="js/scripts.js"></script>   
+
+</html>
